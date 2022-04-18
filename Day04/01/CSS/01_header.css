@@ -1,0 +1,147 @@
+
+
+#gnb{
+    position: sticky;
+    top: 0;
+    height: 55;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+}
+#gnb .gnb_kurly {
+    width: 1050px; background-color: white; letter-spacing: -1px;
+
+}
+
+#gnb .inner-gndkurly {
+    position: relative; width: 1050px; height: 56px; margin: 0 auto;
+}
+
+#gnb .gnb_main ul.gnb a .txt {font-weight: 700;}
+#gnb .gnb_main ul.gnb a span:hover {
+    color: #5f0080;
+    border-bottom: 1,5px solid #5f0080;
+}
+
+/* 메뉴 영역 - 전체 카테고리 왼쪽 햄버거 메뉴 아이콘*/
+#gnb .gnb_main .menul .ico {
+    float: left;
+    width: 16px;
+    height: 14px;
+    margin: 5px 14px 0 0;
+    background: url(../img/ico_gnb_all_off.png) no-repeat;
+}
+
+/*검색 영역*/
+#gnb .gnb_search {
+    position: absolute;
+    top: 10px;
+    right: 108px;
+    width: 223px;
+}
+
+/* 검색 영역- 입력상자*/
+#gnb .gnb_search .inpur_search {
+    width: 195px;
+    height: 36px;
+    background-color: #f7f7f7;
+    border: 1px solid #f7f7f7;
+    border-radius: 18px;
+    padding: 0 23px 014px;
+    font-weight: 400;
+    color: #666;
+    line-height: 16px;
+    outline: none;     /* 입력상자의 윤곽선을 없앰*/
+}
+
+/* 검색 영역- 검색 아이콘 */
+#gnb .gnb_search .btn_search {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 5px;
+}
+
+/* 장바구니 아이콘 */
+#gnb .cart-count {
+    position: absolute;
+    top: 10px;
+    right: -5px;
+}
+#gnb .cart-count .inner_cartcont {
+    text-align: center;
+    font-weight: 400;
+}
+
+
+#gnb .cart_count .btn_cart {
+    background: url(../img/ico_cart.svg) no-repeat 50;
+}
+
+
+
+/*배송지 설정 아이콘*/
+#gnb .btn-location {
+    position: absolute;
+    top: 0;
+    right: 51px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: url() no-repeat 50% 50%;
+    font-size: 0;
+    cursor: pointer;
+}
+
+/*section*/
+section {
+    width: 1050px;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid cornflowerblue;
+}
+
+/*카테고리 풀다운 메뉴 */
+#gnb .gnb_sub {
+    display: none;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 213px;
+    padding-top: 1px;
+    z-index: 300; 
+}
+#gnb .gnb_sub .inner_sub {
+    width: 100%;
+    border: 1px solid #ddd;
+    background: url(../img.bg_gnb_v3.png) repeat-y 0 0;
+}
+#gnb .gnb_sub .inner_sub ul.gnb_meun {
+    width: 219px;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-x: auto;
+}
+#gnb .gnb_sub .inner_sub ul.gnb_meun li {
+    width: 100%;
+    text-align: left;
+}
+#gnb .gnb_sub .inner_sub ul.gnb_meun li a.meun {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    padding: 8px 0 0 14px; /* top right bottom left*/
+    cursor: pointer;
+}
+
+/*카테고리 풀다운 메뉴 아이콘*/
+#gnb .gnb_sub .ico {float: left; width: 24px; height: 24px;}
+#gnb .gnb_sub .ico img {width: 24px; height: 24px;}
+
+/* 메뉴 아이콘 활성화/비활성화*/
+#gnb .gnb_sub .ing_off {display: block;}
+#gnb .gnb_sub .ing_on {display: none;}
